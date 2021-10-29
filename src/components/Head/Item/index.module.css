@@ -1,0 +1,41 @@
+
+div{
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    top: 0px;
+    right: auto;
+}
+.span{
+    left: 800px;
+    color: white;
+    position: fixed;
+}
+.logo{
+    color: white;
+}
+.activit{
+    top: 8px;
+    left: 1300px;
+    position: fixed;
+}
+
+.user{
+    left: 1360px;
+    color: white;
+    position: fixed;
+}
+.icon{
+    top: 20px;
+    left: 1160px;
+    font-size: 20px;
+    color: #C0CCDA;
+    position: fixed;
+}
+.loginIcon{
+    top: 20px;
+    left: 1200px;
+    font-size: 20px;
+    color: #C0CCDA;
+    position: fixed;
+}

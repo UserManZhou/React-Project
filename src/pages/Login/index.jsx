@@ -8,7 +8,7 @@ class Index extends Component {
 
     btnLogin = () => {
         this.setState({isSpin:true})
-        this.props.history.replace("/head")
+        this.props.history.replace("/home")
     }
 
     render() {
