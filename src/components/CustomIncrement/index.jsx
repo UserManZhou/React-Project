@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {Divider} from 'antd';
-import {Form, Input, Button, Table} from 'element-react'
-import {USER_SEARCH} from "../../../constant/RouteContant";
-import Item from './index.module.css'
+import {Button, Form, Input, Table} from "element-react";
+import {Divider} from "antd";
 import {NavLink} from "react-router-dom";
+
 const DepartmentData = {
     columns: [
         {
@@ -40,34 +39,29 @@ const DepartmentData = {
     }]
 }
 class Index extends Component {
-
-
     render() {
         return (
             <div>
-                <Divider orientation="left">Increment User</Divider>
-                <Form labelWidth='100' >
-                    <Form.Item label="User Name" className={Item.Item}>
-                        <Input placeholder="Please Output User Name"></Input>
-                    </Form.Item>
-                    <Form.Item label="User Status" className={Item.Item} >
-                        <Input placeholder="Please Output User Status"></Input>
-                    </Form.Item>
-                    <Form.Item label="User Login Name" className={Item.right}>
-                        <Input placeholder="Please Output User Login Name"></Input>
-                    </Form.Item>
-                    <Form.Item label="User Password" className={Item.rightT}>
-                        <Input placeholder="Please Output User Password"></Input>
+                <Divider orientation="left">{this.props.title}</Divider>
+                <Form inline={true}   className="demo-form-inline">
+                    <Form.Item>
+                        <Input placeholder={this.props.inputs.input} ></Input>
                     </Form.Item>
                     <Form.Item>
-                       <div className={Item.button}>
-                           <Button type="primary" nativeType="submit">Submit</Button>
-                           <NavLink to={USER_SEARCH}>
-                               <Button>GoBack</Button>
-                           </NavLink>
-                       </div>
+                        <Input placeholder={this.props.inputs.inputT} ></Input>
                     </Form.Item>
-                </Form>
+                    {
+                        this.props.isDownload ?
+                            <Form.Item>
+                                <Input placeholder={this.props.inputs.inputTh} ></Input>
+                            </Form.Item> : null
+                    }
+                    <Form.Item>
+                        <NavLink to={this.props.to}><Button nativeType="button" type="warning">Goback</Button></NavLink>
+                        &nbsp;<Button nativeType="submit" type="primary">Submit</Button>
+                    </Form.Item>
+                </Form>}
+                <Divider orientation="centent">Example</Divider>
                 <Table
                     style={{width: '100%'}}
                     columns={DepartmentData.columns}

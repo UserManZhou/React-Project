@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Layout } from 'antd';
 import Item from './Item'
-import {DesktopOutlined, FileOutlined, PieChartOutlined, TeamOutlined, UserOutlined} from "@ant-design/icons";
 const { Sider } = Layout;
 
 class Index extends Component {

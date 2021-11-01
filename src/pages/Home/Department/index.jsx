@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import Table from '../../../components/Table'
+import {DEPARTMENT_INREMENT} from "../../../constant/RouteContant";
 import {Divider} from 'antd'
-import {USER_INCREMENT} from "../../../constant/RouteContant";
 class Index extends Component {
     render() {
         return (
             <div>
-                <Divider orientation="left">User</Divider>
-                <Table message="User Manage" to={USER_INCREMENT}>Search User Message</Table>
+                <Divider orientation="left">Department</Divider>
+                <Table message="Department" to={DEPARTMENT_INREMENT}>Department Search</Table>
             </div>
         );
     }

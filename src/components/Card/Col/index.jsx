@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, Col} from "antd";
+import {Card} from "antd";
 
 class Index extends Component {
     render() {

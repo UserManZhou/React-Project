@@ -1,12 +1,32 @@
-.from {
-    position: fixed;
-    bottom: 460px;
-    left: 640px;
+.Item {
+    width: 300px;
 }
-
-div {
+.right{
+    width: 300px;
     margin: 0px;
     padding: 0px;
+    bottom: 0px;
+    top: 122px;
     right: 0px;
-    left: 0px;
+    left: 600px;
+    position: fixed;
+}
+.rightT{
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    top: 180px;
+    right: 0px;
+    left: 600px;
+    position: fixed;
+}
+.button{
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    top: 180px;
+    right: 0px;
+    left: 1000px;
+    position: fixed;
 }

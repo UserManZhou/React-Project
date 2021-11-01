@@ -1,0 +1,16 @@
+.from {
+    position: fixed;
+    bottom: 170px;
+    left: 640px;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+    right: 0px;
+    left: 0px;
+}
+.btn{
+    position: fixed;
+    left: 1280px;
+}

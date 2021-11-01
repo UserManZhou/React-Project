@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Item from './index.module.css'
 import MyNavLink from '../../../pages/MyNavLink'
 import { Avatar } from 'antd';
+import {LOGIN, CENTRE} from "../../../constant/RouteContant";
 import {
     HomeFilled,
     UnlockOutlined,
@@ -26,7 +27,7 @@ class Index extends Component {
         return (
             <div>
                 <HeatMapOutlined style={{fontSize:'16px',color:'white'}} />   <span className={Item.logo}>
-                <NavLink to="/home/">A M O L P S W</NavLink>
+                <NavLink to={CENTRE}>A M O L P S W</NavLink>
             </span>
                 {
                     timer === '' ?
@@ -36,8 +37,8 @@ class Index extends Component {
                 }
                     <Avatar size={50} src="/img/img-8e50cc5f55c9f01891cbb2ce14c95761.jpg" className={Item.activit}/>
                     <span className={Item.user}>User</span>
-                <MyNavLink to="/home" ><HomeFilled className={Item.icon}/></MyNavLink>
-                <MyNavLink to="/login" ><UnlockOutlined className={Item.loginIcon}/></MyNavLink>
+                <MyNavLink to={CENTRE} ><HomeFilled className={Item.icon}/></MyNavLink>
+                <MyNavLink to={LOGIN} ><UnlockOutlined className={Item.loginIcon}/></MyNavLink>
             </div>
         );
     }
