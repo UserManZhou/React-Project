@@ -3,8 +3,9 @@ import axios from "axios";
 export  const request = (config,success,error) =>{
     //初始化axios的配置
     const  initialize = axios.create({
-        baseURL: '',
-        timeout: 500
+        baseURL: 'http://localhost:8080/login',
+        timeout: 500,
+        method: 'POST'
     });
 
     // 回调成功的数据和错误的信息
