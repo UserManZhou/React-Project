@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import CustomIncrement from '../../../components/CustomIncrement'
 import {DEPARTMENT} from "../../../constant/RouteContant";
 
@@ -8,10 +8,15 @@ const inputs ={
 }
 class Index extends Component {
     render() {
+        const {location} = this.props 
+        const {state} = location
         return (
-            <div>
-                <CustomIncrement title="Increment User" inputs={inputs} to={DEPARTMENT}/>
-            </div>
+            <Fragment>
+                {
+                    state != undefined ?  <CustomIncrement title="Increment User" inputs={inputs} to={DEPARTMENT} state={state}/>:
+                    <CustomIncrement title="Increment User" inputs={inputs} to={DEPARTMENT}/>
+                }
+            </Fragment>
         );
     }
 }

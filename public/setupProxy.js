@@ -7,8 +7,12 @@ module.exports =function (app) {
             target:'http://localhost:8080',
             changeOrigin:true,
             pathRwrite: {'^/user/login/' : ''}
-        })
-
+        }),
+        Proxy('/department/department/DepartmentManage',{
+            target:'http://localhost:8899',
+            changeOrigin:true,
+            pathRwrite: {'^/department/department/DepartmentManage' : ''}
+        }),
     )
 
 }

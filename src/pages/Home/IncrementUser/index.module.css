@@ -8,6 +8,7 @@
     bottom: 0px;
     top: 122px;
     right: 0px;
+    
     left: 600px;
     position: fixed;
 }
@@ -19,6 +20,16 @@
     top: 180px;
     right: 0px;
     left: 600px;
+    position: fixed;
+}
+.rightF{
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    top: 122px;
+    right: 0px;
+    left: 900px;
     position: fixed;
 }
 .button{

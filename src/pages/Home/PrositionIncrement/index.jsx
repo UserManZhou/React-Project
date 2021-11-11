@@ -9,9 +9,11 @@ const inputs ={
 
 class Index extends Component {
     render() {
+        const {location} = this.props
+        const {state} = location
         return (
             <div>
-                <CustomIncrement title="Increment Position" inputs={inputs} to={POSITION}/>
+                <CustomIncrement title="Increment Position" inputs={inputs} to={POSITION} position={state}/>
             </div>
         );
     }
